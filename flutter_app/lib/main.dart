@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         {'Text': 'Black', 'score': 10},
         {'Text': 'Red', 'score': 6},
         {'Text': 'Green', 'score': 4},
-        {'Text': 'White', 'score': 6}
+        {'Text': 'White', 'score': 1}
       ],
     },
     {
@@ -36,16 +36,52 @@ class _MyAppState extends State<MyApp> {
         {'Text': 'Rabbit', 'score': 10},
         {'Text': 'Snake', 'score': 6},
         {'Text': 'Elephant', 'score': 9},
-        {'Text': 'Lion', 'score': 7}
+        {'Text': 'Lion', 'score': 1}
       ],
     },
     {
-      'questionText': 'Who\'s your favorite instructor?',
+      'questionText': '121 Divided by 11 is ',
       'answers': [
-        {'Text': 'Max', 'score': 10},
-        {'Text': 'Max', 'score': 9},
-        {'Text': 'Max', 'score': 5},
-        {'Text': 'Max', 'score': 4}
+        {'Text': '10', 'score': 10},
+        {'Text': '11', 'score': 0},
+        {'Text': '19', 'score': 0},
+        {'Text': '18', 'score': 0}
+      ],
+    },
+    {
+      'questionText': 'What is 6% Equals to ',
+      'answers': [
+        {'Text': '0.006', 'score': 0},
+        {'Text': '0.6', 'score': 0},
+        {'Text': '0.06', 'score': 10},
+        {'Text': '0.0006', 'score': 0}
+      ],
+    },
+    {
+      'questionText': '  Solve 23 + 3 ÷ 3',
+      'answers': [
+        {'Text': '24', 'score': 10},
+        {'Text': '25', 'score': 0},
+        {'Text': '26', 'score': 0},
+        {'Text': '27', 'score': 0}
+      ],
+    },
+    {
+      'questionText': 'Solve 3 + 6 × ( 5 + 4) ÷ 3 - 7',
+      'answers': [
+        {'Text': '11', 'score': 0},
+        {'Text': '16', 'score': 0},
+        {'Text': '14', 'score': 10},
+        {'Text': '15', 'score': 0}
+      ],
+    },
+    {
+      'questionText': 'Add the Decimals 5.23 + 8.79',
+      'answers': [
+        {'Text': '14.02', 'score': 10},
+        {'Text': '14.19', 'score': 0},
+        {'Text': '14.11', 'score': 0},
+        {'Text': '14.29', 'score': 0}
       ],
     },
   ];
@@ -114,7 +150,7 @@ class _MyAppState extends State<MyApp> {
                   questionIndex: _questionIndex,
                   questions: _questions,
                 )
-              : Result(_totalscore,_resetquiz),
+              : Result(_totalscore, _resetquiz),
         ),
       ),
     );

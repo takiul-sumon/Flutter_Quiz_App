@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Result extends StatelessWidget {
   final int resultscore;
   final resethandler;
@@ -9,14 +8,16 @@ class Result extends StatelessWidget {
 
   String get resultphrase {
     String resulttext = 'You did it';
-    if (resultscore < 8) {
-      resulttext = 'Awsome';
-    } else if (resultscore <= 12) {
-      resulttext = 'Pretty';
-    } else if (resultscore <= 12) {
-      resulttext = 'Decent';
-    } else {
-      resulttext = 'You are so bad';
+    {
+      if (resultscore < 8) {
+        resulttext = 'Awsome';
+      } else if (resultscore <= 12) {
+        resulttext = 'Pretty';
+      } else if (resultscore <= 12) {
+        resulttext = 'Decent';
+      } else {
+        resulttext = 'You are so bad';
+      }
     }
     return resulttext;
   }
